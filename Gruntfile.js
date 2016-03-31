@@ -326,17 +326,17 @@ module.exports = function(grunt) {
     //
     //      Early choices.
     "clean:unpacked",
-    "clean:packed", // pick one -- packed for production, unpacked for development.
-    "clean:allConfigs", // if you do not need any combined configuration files.
+//    "clean:packed", // pick one -- packed for production, unpacked for development.
+//    "clean:allConfigs", // if you do not need any combined configuration files.
     //      Fonts. Pick at least one! Check notes above on configurations.
-    "clean:fontAsana",
+/*    "clean:fontAsana",
     "clean:fontGyrePagella",
     "clean:fontGyreTermes",
     "clean:fontLatinModern",
     "clean:fontNeoEuler",
     "clean:fontStix",
     "clean:fontStixWeb",
-    "clean:fontTeX",
+    "clean:fontTeX",*/
     //      Font formats. Pick at least one (unless you use SVG output; then clean all).
     "clean:dropFonts", // when using SVG output
     "clean:eot",
@@ -347,7 +347,7 @@ module.exports = function(grunt) {
     //      Input. Pick at least one.
     "clean:asciimathInput",
     "clean:mathmlInput",
-    "clean:texInput",
+//    "clean:texInput",
     //       Output
     "clean:htmlCssOutput",
     "clean:mathmlOutput",
@@ -355,7 +355,7 @@ module.exports = function(grunt) {
     // Extensions. You probably want to leave the set matching your choices.
     "clean:extensionsAsciimath",
     "clean:extensionsMathml",
-    "clean:extensionsTeX",
+//    "clean:extensionsTeX",
     "clean:extensionHtmlCss",
     // Other items
     "clean:locales",
