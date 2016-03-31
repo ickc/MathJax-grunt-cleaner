@@ -43,17 +43,17 @@ module.exports = function(grunt) {
       unpacked: [
         "unpacked"
       ],
-/*      packed: [
+      packed: [
         "config",
         "docs",
         "extensions",
         "jax",
         "localization",
         "MathJax.js"
-      ],*/
+      ],
       // If you don"t need combined configuration files or want to build your own:
       allConfigs: [
-//        "config",
+        "config",
         "unpacked/config"
       ],
       //
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       //    **IMPORTANT.** Make sure to prevent fallbacks and local fonts in your configuration!
       //
       //
-/*      fontAsana: [
+      fontAsana: [
         "fonts/HTML-CSS/Asana-Math",
         "jax/output/HTML-CSS/fonts/Asana-Math",
         "unpacked/jax/output/HTML-CSS/fonts/Asana-Math",
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
         "unpacked/jax/output/HTML-CSS/fonts/TeX",
         "jax/output/SVG/fonts/TeX",
         "unpacked/jax/output/SVG/fonts/TeX"
-      ],*/
+      ],
       //
       // Remove font formats
       // If you know you only need a specific format of your remaining fonts (e.g., woff), then you can delete the others.
@@ -138,9 +138,9 @@ module.exports = function(grunt) {
       svg: [ // **NOT** related to the SVG output!
         "fonts/**/svg"
       ],
-//      woff: [
-//        "fonts/**/woff"
-//      ],
+      woff: [
+        "fonts/**/woff"
+      ],
       // ## Choose the input
       //    Remove input that you don"t need.
       //    **Note.** This includes combined configuration files.
@@ -160,12 +160,12 @@ module.exports = function(grunt) {
         "unpacked/config/MathML*",
         "unpacked/jax/input/MathML"
       ],
-/*      texInput: [
+      texInput: [
         "config/TeX*",
         "jax/input/TeX",
         "unpacked/config/TeX*",
         "unpacked/jax/input/TeX"
-      ],*/
+      ],
       // ## Extensions
       extensionsAsciimath: [
         "extensions/asciimath2jax.js",
@@ -177,14 +177,14 @@ module.exports = function(grunt) {
         "unpacked/extensions/MathML",
         "unpacked/extensions/mml2jax.js"
       ],
-/*      extensionsTeX: [
+      extensionsTeX: [
         "extensions/TeX",
         "extensions/jsMath2jax.js",
         "extensions/tex2jax.js",
         "unpacked/extensions/TeX",
         "unpacked/extensions/jsMath2jax.js",
         "unpacked/extensions/tex2jax.js"
-      ],*/
+      ],
       extensionHtmlCss: [
         "extensions/HTML-CSS",
         "unpacked/extensions/HTML-CSS"
@@ -214,7 +214,7 @@ module.exports = function(grunt) {
         "jax/output/SVG",
         "unpacked/jax/output/SVG"
       ],
-/*      commonHtmlOutput: [
+      commonHtmlOutput: [
         "configs/*CHTML.js",
         "configs/*CHTML-full.js",
         "unpacked/config/*CHTML.js",
@@ -223,7 +223,7 @@ module.exports = function(grunt) {
         "unpacked/jax/output/CommonHTML",
         "extensions/CHTML-preview.js",
         "unpacked/extensions/CHTML-preview.js"
-      ],*/
+      ],
       previewHtmlOutput: [
         "jax/output/PreviewHTML",
         "unpacked/jax/output/PreviewHTML",
@@ -326,28 +326,28 @@ module.exports = function(grunt) {
     //
     //      Early choices.
     "clean:unpacked",
-//    "clean:packed", // pick one -- packed for production, unpacked for development.
-//    "clean:allConfigs", // if you do not need any combined configuration files.
+    "clean:packed", // pick one -- packed for production, unpacked for development.
+    "clean:allConfigs", // if you do not need any combined configuration files.
     //      Fonts. Pick at least one! Check notes above on configurations.
-/*    "clean:fontAsana",
+    "clean:fontAsana",
     "clean:fontGyrePagella",
     "clean:fontGyreTermes",
     "clean:fontLatinModern",
     "clean:fontNeoEuler",
     "clean:fontStix",
     "clean:fontStixWeb",
-    "clean:fontTeX",*/
+    "clean:fontTeX",
     //      Font formats. Pick at least one (unless you use SVG output; then clean all).
     "clean:dropFonts", // when using SVG output
     "clean:eot",
     "clean:otf",
     "clean:png",
     "clean:svg",
-//    "clean:woff",
+    "clean:woff",
     //      Input. Pick at least one.
     "clean:asciimathInput",
     "clean:mathmlInput",
-//    "clean:texInput",
+    "clean:texInput",
     //       Output
     "clean:htmlCssOutput",
     "clean:mathmlOutput",
@@ -355,7 +355,7 @@ module.exports = function(grunt) {
     // Extensions. You probably want to leave the set matching your choices.
     "clean:extensionsAsciimath",
     "clean:extensionsMathml",
-//    "clean:extensionsTeX",
+    "clean:extensionsTeX",
     "clean:extensionHtmlCss",
     // Other items
     "clean:locales",
@@ -368,15 +368,15 @@ module.exports = function(grunt) {
     //      Early choices.
     "clean:unpacked",
     //        "clean:packed", // pick one -- packed for production, unpacked for development.
-//    "clean:allConfigs", // if you do not need any combined configuration files.
+    "clean:allConfigs", // if you do not need any combined configuration files.
     //      Fonts. Pick at least one! Check notes above on configurations.
-/*    "clean:fontAsana",
+    "clean:fontAsana",
     "clean:fontGyrePagella",
     "clean:fontGyreTermes",
     "clean:fontLatinModern",
     "clean:fontNeoEuler",
     "clean:fontStix",
-    "clean:fontStixWeb",*/
+    "clean:fontStixWeb",
     //        "clean:fontTeX",
     //      Font formats. Pick at least one (unless you use SVG output; then clean all).
     "clean:dropFonts", // when using SVG output
@@ -384,11 +384,11 @@ module.exports = function(grunt) {
     "clean:otf",
     "clean:png",
     "clean:svg",
-//    "clean:woff",
+    "clean:woff",
     //      Input. Pick at least one.
     "clean:asciimathInput",
     //        "clean:mathmlInput",
-//    "clean:texInput",
+    "clean:texInput",
     //       Output
     "clean:htmlCssOutput",
     "clean:mathmlOutput",
@@ -396,7 +396,7 @@ module.exports = function(grunt) {
     // Extensions. You probably want to leave the set matching your choices.
     "clean:extensionsAsciimath",
     //        "clean:extensionsMathml",
-//    "clean:extensionsTeX",
+    "clean:extensionsTeX",
     "clean:extensionHtmlCss",
     // Other items
     "clean:locales",
