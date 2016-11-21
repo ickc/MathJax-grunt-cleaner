@@ -11,8 +11,8 @@ mathjax:
 	zip -r mathjax.zip MathJax-master/
 
 download:
-	wget https://github.com/mathjax/MathJax/archive/master.zip -O MathJax.zip && unzip MathJax.zip && rm -f MathJax.zip
-	wget https://github.com/mathjax/MathJax-third-party-extensions/archive/master.zip -O MathJax-third-party-extensions.zip && unzip MathJax-third-party-extensions.zip && rm -f MathJax-third-party-extensions.zip
+	wget https://github.com/mathjax/MathJax/archive/master.zip -O MathJax.zip && unzip MathJax.zip >/dev/null && rm -f MathJax.zip
+	wget https://github.com/mathjax/MathJax-third-party-extensions/archive/master.zip -O MathJax-third-party-extensions.zip && unzip MathJax-third-party-extensions.zip >/dev/null && rm -f MathJax-third-party-extensions.zip
 
 clean:
 	rm -rf MathJax-master/ MathJax-third-party-extensions-master/
