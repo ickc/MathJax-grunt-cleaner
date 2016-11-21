@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - node
-before-install:
+before_install:
   - npm install npm -g
   - npm install grunt -g
 install:
