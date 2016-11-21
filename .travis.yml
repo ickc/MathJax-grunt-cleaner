@@ -1,9 +1,11 @@
 language: node_js
+before-install:
+  - npm install npm -g
+  - npm install grunt -g
 install:
-    - make download
-    - npm install npm -g
+  - make download
 script:
-    - make
+  - make
 deploy:
   provider: releases
   api_key: "$GH_TOKEN"
