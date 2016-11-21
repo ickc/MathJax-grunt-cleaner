@@ -336,7 +336,7 @@ module.exports = function(grunt) {
     "clean:fontNeoEuler",
     "clean:fontStix",
     "clean:fontStixWeb",
-    "clean:fontTeX",
+    // "clean:fontTeX",
     //      Font formats. Pick at least one (unless you use SVG output; then clean all).
     // "clean:dropFonts", // when using SVG output
     "clean:eot",
