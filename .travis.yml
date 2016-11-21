@@ -1,0 +1,12 @@
+install:
+    - make download
+script:
+    - make
+deploy:
+  provider: releases
+  api_key: "$GH_TOKEN"
+  file:
+    - "mathjax.zip"
+  skip_cleanup: true
+  on:
+    tags: true
