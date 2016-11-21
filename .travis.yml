@@ -1,6 +1,7 @@
 language: node_js
 install:
     - make download
+    - npm install npm -g
 script:
     - make
 deploy:
